@@ -1,0 +1,254 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: all 0.4s;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color:#00bcd4;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+/* navbar styling */
+.navbar {
+    display: flex;
+    height: 5rem;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    border-bottom: 2px solid rgb(84, 81, 81);
+    background-color: rgb(84, 81, 81); /* Changed background color to black */
+}
+
+/* logo style */
+.logo img {
+    width: 4rem;
+    height: 4rem;
+    margin-left: 1rem;
+}
+
+.hamburger-menu {
+    padding-right: 1.5rem;
+    cursor: pointer;
+}
+
+.hamburger-menu .line {
+    display: block;
+    width: 2.5rem;
+    height: 2px;
+    margin-bottom: 10px;
+    background-color: white; /* Changed hamburger menu color to white */
+    cursor: pointer;
+}
+
+.nav-menu {
+    position: fixed;
+    width: 94%;
+    top: 6rem;
+    left: 18px;
+    background-color: rgb(202, 209, 209);
+    font-weight: 600;
+}
+
+.nav-menu a {
+    display: block;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.nav-menu a:hover {
+    background-color: #00bcd4;
+}
+
+.hide {
+    display: none;
+}
+
+/* for Desktop view */
+@media screen and (min-width: 600px) {
+    .navbar {
+        justify-content: space-around;
+    }
+
+    .nav-menu {
+        display: block;
+        position: static;
+        width: auto;
+        margin-right: 20px;
+        background: none;
+    }
+
+    .nav-menu a {
+        display: inline-block;
+        padding: 15px 20px;
+    }
+
+    .nav-menu a:hover {
+        background-color: rgb(186, 192, 186);
+        border-radius: 10px;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+}
+
+.text-center {
+    text-align: center;
+    padding-right: 450px;
+}
+
+.text-center .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    background-color: rgb(6, 13, 13);
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+}
+
+.text-center .btn:hover {
+    background-color: rgb(10, 11, 11);
+}
+
+
+
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    padding-right: 450px;
+}
+
+.social-links a {
+    margin: 0 10px;
+}
+
+.social-links a i {
+    font-size: 30px;
+    color: rgb(191, 229, 221);
+    padding-left: 10px;
+}
+
+
+
+
+
+
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(77, 76, 76); /* Background color */
+    padding: 100px; /* Add some padding for better appearance */
+}
+
+.content {
+    flex: 1;
+    color: #00bcd4;
+    height: 50px; /* Remove quotes around 50px */
+    padding-bottom: 300px;
+    font-size: 2rem; /* Adjust the font size as needed */
+    
+}
+
+
+.image-container {
+    flex: 1;
+    text-align: right;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+    border: none;
+    outline: 0;
+    display: block; /* Change display to block to enable margin auto */
+    margin: 0 auto; /* Set margin to auto for horizontal centering */
+    padding: 8px;
+    color: black;
+    background-color: rgb(117, 135, 237);
+    text-align: center;
+    cursor: pointer;
+    width: 40%;
+    border-radius: 10px;
+  }
+  
+
+.button:hover {
+  background-color: #00bcd4;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    background-color: #f2f2f2; /* Set background color */
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 z(0,0,0,0.2);
+  }
+  
+  body {
+    background-color: rgb(77, 76, 76); /* Change the color code as per your preference */
+}
+
+
+
